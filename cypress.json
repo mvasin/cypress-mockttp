@@ -1,0 +1,10 @@
+{
+  "$schema": "https://raw.githubusercontent.com/cypress-io/cypress/develop/cli/schema/cypress.schema.json",
+  "integrationFolder": ".",
+  "fixturesFolder": false,
+  "pluginsFile": false,
+  "supportFile": false,
+  "screenshotsFolder": "screenshots",
+  "testFiles": "**/*.spec.ts",
+  "videosFolder": "videos"
+}

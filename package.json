@@ -1,0 +1,21 @@
+{
+  "name": "cypress-mockttp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "cypress": "^4.5.0",
+    "mockttp": "^0.20.1",
+    "start-server-and-test": "^1.11.0",
+    "ts-node": "^8.10.1",
+    "typescript": "^3.8.3"
+  },
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "start:mock-server": "ts-node server.ts",
+    "cy": "start-server-and-test start:mock-server http-get://localhost:9999 cy:open",
+    "cy:headless": "start-server-and-test start:mock-server http-get://localhost:9999 cy:run",
+    "test:types": "tsc dummy.spec.ts --noEmit"
+  }
+}
